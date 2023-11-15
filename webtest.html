@@ -7,101 +7,173 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <style>
-.icon{
-  color: blue; 
-  size-adjust: 200%;
+.navbar-brand{
+  img{
+  width: 50px;
+  height: 50px;
 }
-
-.main{
-    display:flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    color: white;
-    font-size:20px;
-
 }
 .card{
-    width: 10rem;
-    
+  padding: 5px;
+  margin-left: 10px;
+  display: flex;
+  width: 200px;
 }
-
 </style>
 <body>
-    <div navbar>
-        <div class="wrapper">
-            <div class="button">
-                <div class="icons">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-            </div>
-        <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        </div>
-        <div class="main">
-            <input type="text" placeholder="Search Facebook">
-        </div>
-        <ul class="list-group">
-            <li class="list-group-item">Friends</li>
-            <li class="list-group-item">Home</li>
-            <li class="list-group-item">Friends Requests</li>
-            <li class="list-group-item">Suggestions</li>
-            <li class="list-group-item">All friends</li>
-            <li class="list-group-item">Birthdays</li>
-            <li class="list-group-item">Custom Lists</li>
-          </ul>
-    </div> <br><br> 
-    <div class="card-group">
-        
-        
-        <div class="card">
-            <img src="./images2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">James</h5>
-              <a href="#" class="btn btn-primary">Confirm</a><br>
-              <a href="#" class="btn btn-tertiary">Delete</a>
-          </div>
-      </div>
-      <div class="card" style="width: 12rem;">
-        <img src="./images2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">James</h5>
-          <a href="#" class="btn btn-primary">Confirm</a><br>
-          <a href="#" class="btn btn-tertiary">Delete</a>
-      </div>
-  </div>
+  <!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid justify-content-between">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <!-- Brand -->
+      <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <img
+          src="facebook.png"
+          height="50"
+          width="50"
+          alt=""
+          loading="lazy"
+          style="margin-top: 2px;"
+        />
+      </a>
 
-  <div class="card" style="width: 12rem;">
-    <img src="./images2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Mark</h5>
-      <a href="#" class="btn btn-primary">Confirm</a><br>
-      <a href="#" class="btn btn-tertiary">Delete</a>
+      <!-- Search form -->
+      <form class="input-group w-auto my-auto d-none d-sm-flex">
+        <input
+          autocomplete="off"
+          type="search"
+          class="form-control rounded"
+          placeholder="Search Facebook"
+          style="min-width: 125px;"
+        />
+        <span class="input-group-text border-0 d-none d-lg-flex"
+          ><i class="fas fa-search"></i
+        ></span>
+      </form>
+    </div>
+    <!-- Left elements -->
+
+    <!-- Center elements -->
+    <ul class="navbar-nav flex-row d-none d-md-flex">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <img src="home.png" style="width: 60px; height: 50px;">
+          <span><i class="fas fa-home fa-lg"></i></span> 
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <img src="video.png" style="width: 50px; height: 40px;">
+          <span><i class="fas fa-home fa-lg"></i></span> 
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <img src="add.png" style="width: 50px; height: 50px;">
+          <span><i class="fas fa-home fa-lg"></i></span> 
+        </a>
+      </li>
+
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link" href="#">
+          <span><i class="fas fa-shopping-bag fa-lg"></i></span>
+        </a>
+      </li>
+    </ul>
+    <!-- Center elements -->
+
+    <!-- Right elements -->
+    <ul class="navbar-nav flex-row">
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <img src="google.png" style="width: 40px; height: 40px;">
+          <span><i class="fas fa-home fa-lg"></i></span> 
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <img src="message.png" style="width: 40px; height: 40px;">
+          <span><i class="fas fa-home fa-lg"></i></span>
+          <span class="badge rounded-pill badge-notification bg-danger">44</span> 
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-1 active">
+        <a class="nav-link" href="#">
+          <img src="notification.jpg" style="width: 40px; height: 40px;">
+          <span><i class="fas fa-home fa-lg"></i></span> 
+          <span class="badge rounded-pill badge-notification bg-danger">6</span>
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-1">
+        <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+          <img
+            src="passport.jpg"
+            class="rounded-circle"
+            height="40"
+            width="40"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+    </ul>
+    <!-- Right elements -->
   </div>
-</div>
-<div class="card" style="width: 12rem;">
-    <img src="./images2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">John</h5>
-      <a href="#" class="btn btn-primary">Confirm</a><br>
-      <a href="#" class="btn btn-tertiary">Delete</a>
+</nav>
+<!-- Navbar -->
+ 
+
+
+  <div class="d-flex">
+    <div class="card" style="width: 18rem;">
+      <div class="card-header"><b>
+        Friends
+      </div></b>
+      <ul class="list-group list-group-flush"><b>
+        <li class="list-group-item">Home</li>
+        <li class="list-group-item">Friend Requests</li>
+        <li class="list-group-item">Suggestions</li>
+        <li class="list-group-item">All friends</li>
+        <li class="list-group-item">Birthdays</li>
+        <li class="list-group-item">Custom Lists</li>
+      </ul></b>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images 5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mark keith</h5>
+            <a href="#" class="btn btn-primary">Confirm</a><br>
+            <br><a href="#" class="btn btn-secondary">Delete</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images 4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jovin Anthony</h5>
+            <a href="#" class="btn btn-primary">Confirm</a><br>
+            <br><a href="#" class="btn btn-secondary">Delete</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images 3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ritah Pavins</h5>
+            <a href="#" class="btn btn-primary">Confirm</a><br>
+            <br><a href="#" class="btn btn-secondary">Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="card" style="width: 12rem;">
-    <img src="./images2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">James</h5>
-      <a href="#" class="btn btn-primary">Confirm</a><br>
-      <a href="#" class="btn btn-tertiary">Delete</a>
-  </div>
-</div>  <div class="card">
-    <img src="./images2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Richard</h5>
-      <a href="#" class="btn btn-primary">Confirm</a><br>
-      <a href="#" class="btn btn-tertiary">Delete</a>
-  </div>
-</div>
-</body>
-</html>
+   
+
+    
